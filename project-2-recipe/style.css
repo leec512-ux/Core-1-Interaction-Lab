@@ -1,0 +1,179 @@
+/* Entire page */
+body {
+  background-color: #d8cdb7;
+  color: #332b24;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* Paper area */
+header,
+main,
+footer {
+  background-color: #f8f0d8;
+  border-left: 2px solid #b82e22;
+  border-right: 2px solid #b82e22;
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 900px;
+}
+
+/* Header */
+header {
+  border-top: 2px solid #b82e22;
+  padding: 60px 40px 45px;
+  text-align: center;
+}
+
+.small-title {
+  color: #b82e22;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+h1 {
+  color: #b82e22;
+  font-size: 58px;
+  font-weight: normal;
+  line-height: 0.95;
+  margin: 25px auto 15px;
+  text-transform: uppercase;
+}
+
+.author {
+  color: #332b24;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 0 25px;
+}
+
+.introduction {
+  border-bottom: 1px solid #8f8068;
+  border-top: 1px solid #8f8068;
+  font-style: italic;
+  line-height: 1.6;
+  margin: auto;
+  max-width: 550px;
+  padding: 15px 0;
+}
+
+/* Main content */
+main {
+  padding: 10px 50px 40px;
+}
+
+/* Each step */
+.step {
+  align-items: center;
+  border-top: 1px solid #8f8068;
+  display: flex;
+  gap: 35px;
+  padding: 40px 0;
+}
+
+/* Remove the first extra line */
+.step:first-child {
+  border-top: none;
+}
+
+/* Reverse the second and fourth steps */
+.step:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Images */
+.step img {
+  border: 7px solid #fffaf0;
+  box-sizing: border-box;
+  filter: sepia(25%) contrast(90%);
+  height: 270px;
+  object-fit: cover;
+  outline: 1px solid #8f8068;
+  width: 45%;
+}
+
+/* Text area */
+.step-text {
+  width: 55%;
+}
+
+.step-number {
+  color: #56704c;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0 0 10px;
+}
+
+.step h2 {
+  color: #b82e22;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.05;
+  margin: 0 0 15px;
+}
+
+.step-text p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* Footer */
+footer {
+  border-bottom: 2px solid #b82e22;
+  border-top: 2px solid #b82e22;
+  font-size: 14px;
+  padding: 35px;
+  text-align: center;
+}
+
+.ending {
+  color: #56704c;
+  font-size: 22px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+a {
+  color: #b82e22;
+  font-weight: bold;
+}
+
+/* Phone screen */
+@media (max-width: 650px) {
+  body {
+    padding: 15px;
+  }
+
+  header {
+    padding: 45px 25px 35px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  main {
+    padding: 10px 25px 30px;
+  }
+
+  .step,
+  .step:nth-child(even) {
+    display: block;
+  }
+
+  .step img,
+  .step-text {
+    width: 100%;
+  }
+
+  .step img {
+    height: 240px;
+    margin-bottom: 25px;
+  }
+}

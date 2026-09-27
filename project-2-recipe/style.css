@@ -1,13 +1,16 @@
 /* Entire page */
+
 body {
   background-color: #d8cdb7;
   color: #332b24;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   margin: 0;
   padding: 40px 20px;
 }
 
+
 /* Paper area */
+
 header,
 main,
 footer {
@@ -19,7 +22,9 @@ footer {
   max-width: 900px;
 }
 
+
 /* Header */
+
 header {
   border-top: 2px solid #b82e22;
   padding: 60px 40px 45px;
@@ -28,7 +33,7 @@ header {
 
 .small-title {
   color: #b82e22;
-  font-family: Arial, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 4px;
@@ -38,7 +43,7 @@ header {
 h1 {
   color: #b82e22;
   font-size: 58px;
-  font-weight: normal;
+  font-weight: 600;
   line-height: 0.95;
   margin: 25px auto 15px;
   text-transform: uppercase;
@@ -54,6 +59,7 @@ h1 {
 .introduction {
   border-bottom: 1px solid #8f8068;
   border-top: 1px solid #8f8068;
+  font-size: 18px;
   font-style: italic;
   line-height: 1.6;
   margin: auto;
@@ -61,12 +67,16 @@ h1 {
   padding: 15px 0;
 }
 
+
 /* Main content */
+
 main {
-  padding: 10px 50px 40px;
+  padding: 10px 50px 50px;
 }
 
-/* Each step */
+
+/* Each recipe step */
+
 .step {
   align-items: center;
   border-top: 1px solid #8f8068;
@@ -75,17 +85,23 @@ main {
   padding: 40px 0;
 }
 
+
 /* Remove the first extra line */
+
 .step:first-child {
   border-top: none;
 }
 
+
 /* Reverse the second and fourth steps */
+
 .step:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-/* Images */
+
+/* Recipe images */
+
 .step img {
   border: 7px solid #fffaf0;
   box-sizing: border-box;
@@ -96,14 +112,16 @@ main {
   width: 45%;
 }
 
-/* Text area */
+
+/* Recipe text */
+
 .step-text {
   width: 55%;
 }
 
 .step-number {
   color: #56704c;
-  font-family: Arial, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -112,18 +130,118 @@ main {
 
 .step h2 {
   color: #b82e22;
-  font-size: 32px;
-  font-weight: normal;
+  font-size: 34px;
+  font-weight: 600;
   line-height: 1.05;
   margin: 0 0 15px;
 }
 
 .step-text p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.65;
 }
 
+
+/* Partner result section */
+
+.results {
+  border-top: 3px double #b82e22;
+  margin-top: 20px;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.results-title {
+  color: #b82e22;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.results-intro {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0 auto 35px;
+  max-width: 600px;
+}
+
+
+/* Partner photo gallery */
+
+.result-gallery {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.result-item {
+  background-color: #eee3c6;
+  border: 1px solid #8f8068;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.result-item img {
+  border: 6px solid #fffaf0;
+  box-sizing: border-box;
+  filter: sepia(20%) contrast(90%);
+  height: 260px;
+  object-fit: cover;
+  outline: 1px solid #8f8068;
+  width: 100%;
+}
+
+.result-number {
+  color: #56704c;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 20px 0 8px;
+}
+
+.result-item h3 {
+  color: #b82e22;
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 10px;
+}
+
+.result-item p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+
+/* Result summary */
+
+.result-summary {
+  border-bottom: 1px solid #8f8068;
+  border-top: 1px solid #8f8068;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 40px auto 0;
+  max-width: 650px;
+  padding: 20px 0;
+}
+
+.coming-soon {
+  color: #56704c;
+  font-size: 17px;
+  font-style: italic;
+  margin: 25px 0 5px;
+}
+
+
 /* Footer */
+
 footer {
   border-bottom: 2px solid #b82e22;
   border-top: 2px solid #b82e22;
@@ -141,10 +259,13 @@ footer {
 
 a {
   color: #b82e22;
+  font-family: "DM Sans", Arial, sans-serif;
   font-weight: bold;
 }
 
+
 /* Phone screen */
+
 @media (max-width: 650px) {
   body {
     padding: 15px;
@@ -159,7 +280,7 @@ a {
   }
 
   main {
-    padding: 10px 25px 30px;
+    padding: 10px 25px 35px;
   }
 
   .step,
@@ -175,5 +296,21 @@ a {
   .step img {
     height: 240px;
     margin-bottom: 25px;
+  }
+
+  .results {
+    padding-top: 40px;
+  }
+
+  .results-title {
+    font-size: 37px;
+  }
+
+  .result-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .result-item img {
+    height: 280px;
   }
 }
